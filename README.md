@@ -79,13 +79,13 @@ now let's modify the return value:
 finally, we want to add a guard so `targetFn` is only called
 with boolean arguments
 
-  fn.before.unshift(function (args, next) {
-    if (typeof args[0] !== 'boolean') return;
-    next(args);
-  })
+    fn.before.unshift(function (args, next) {
+      if (typeof args[0] !== 'boolean') return;
+      next(args);
+    })
 
-  fn('true')
-  // undefined
+    fn('true')
+    // undefined
 
 since `'true'` is a string, the advice never called `next` and the
 call chain was aborted before calling `targetFn` or any of the
