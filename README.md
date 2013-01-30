@@ -91,9 +91,9 @@ since `'true'` is a string, the advice never called `next` and the
 call chain was aborted before calling `targetFn` or any of the
 subsequent advice
 
-  fn(true)
-  // We're calling targetFn with these arguments: [false]
-  // => "FALSE"
+    fn(true)
+    // We're calling targetFn with these arguments: [false]
+    // => "FALSE"
 
 
 As you can see, `cut` gives you a powerful and easy way to compose, modify,
