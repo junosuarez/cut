@@ -1,0 +1,34 @@
+{
+  "name": "cut",
+  "version": "0.8.0",
+  "description": "Aspect-oriented (AOP) helper for sync or async code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "git@github.com:AgileDiagnosis/cut.git",
+  "keywords": [
+    "AOP",
+    "async",
+    "pipeline",
+    "chain",
+    "aspect",
+    "advice",
+    "pointcut"
+  ],
+  "author": "Agile Diagnosis <hello@agilediagnosis.com>",
+  "contributors": [
+    {
+      "jden <jason@denizac.org"
+    }
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "sinon": "~1.5.2",
+    "chai": "~1.4.2",
+    "sinon-chai": "~2.3.1",
+    "chai-interface": "~1.0.0"
+  }
+}
